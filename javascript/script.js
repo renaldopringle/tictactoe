@@ -8,6 +8,11 @@ $(document).ready(function () {
             location.reload();
         }
     }
+    function reloadpage () {
+        if (win) {
+            location.reload();
+        }
+    }
     $(".box").bind("click", function () {
         if ($(this).has("div").length ? true : false ) {
             console.log("already has div");
@@ -28,23 +33,19 @@ $(document).ready(function () {
         /*first row*/
         if (($("#one").has(".clicko").length ? true : false) && ($("#two").has(".clicko").length ? true : false) && ($("#three").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         if (($("#one").has(".clickx").length ? true : false) && ($("#two").has(".clickx").length ? true : false) && ($("#three").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         /*second row*/
         if (($("#four").has(".clicko").length ? true : false) && ($("#five").has(".clicko").length ? true : false) && ($("#six").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         if (($("#four").has(".clickx").length ? true : false) && ($("#five").has(".clickx").length ? true : false) && ($("#six").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         /*third*/
@@ -55,65 +56,55 @@ $(document).ready(function () {
         }
         if (($("#seven").has(".clickx").length ? true : false) && ($("#eight").has(".clickx").length ? true : false) && ($("#nine").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         /*first column*/
         if (($("#one").has(".clickx").length ? true : false) && ($("#four").has(".clickx").length ? true : false) && ($("#seven").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         if (($("#one").has(".clicko").length ? true : false) && ($("#four").has(".clicko").length ? true : false) && ($("#seven").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         /*second column*/
         if (($("#eight").has(".clickx").length ? true : false) && ($("#five").has(".clickx").length ? true : false) && ($("#two").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         if (($("#eight").has(".clicko").length ? true : false) && ($("#five").has(".clicko").length ? true : false) && ($("#two").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         /*third column*/
         if (($("#nine").has(".clickx").length ? true : false) && ($("#six").has(".clickx").length ? true : false) && ($("#three").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         if (($("#nine").has(".clicko").length ? true : false) && ($("#six").has(".clicko").length ? true : false) && ($("#three").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         /*diagonal start with one end with nine*/
         if (($("#one").has(".clicko").length ? true : false) && ($("#five").has(".clicko").length ? true : false) && ($("#nine").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         if (($("#one").has(".clickx").length ? true : false) && ($("#five").has(".clickx").length ? true : false) && ($("#nine").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         /*diagonal start with seven end with three*/
         if (($("#seven").has(".clicko").length ? true : false) && ($("#five").has(".clicko").length ? true : false) && ($("#three").has(".clicko").length ? true : false)) {
             alert("Player2 wins!");
-            location.reload();
             win = true;
         }
         if (($("#seven").has(".clickx").length ? true : false) && ($("#five").has(".clickx").length ? true : false) && ($("#three").has(".clickx").length ? true : false)) {
             alert("Player1 wins!");
-            location.reload();
             win = true;
         }
         /*Check if game is drawn*/
+        reloadpage();
         draw();
         
         /*Object version*/
