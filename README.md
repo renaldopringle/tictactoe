@@ -1,4 +1,4 @@
 TicTacToe
 =========
 
-A TicToeToe game created using html, css and javascript.
+A TicTacToe game created using html, css and javascript.
