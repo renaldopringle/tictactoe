@@ -1,0 +1,63 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 652.1 652.1" style="enable-background:new 0 0 652.1 652.1;" xml:space="preserve">
+<defs>
+	<style type="text/css">
+
+		.st0{fill:#fff;;stroke:#000000;stroke-width:20;stroke-miterlimit:5;}
+        .st1{fill:#fff;;stroke:#000000;stroke-width:20;stroke-miterlimit:5;}
+
+		.st0 {
+			stroke-dasharray: 2000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 0.5s linear forwards;
+			-o-animation: dash 0.5s linear forwards;
+			-moz-animation: dash 0.5s linear forwards;
+			animation: dash 0.5s linear forwards;
+		}
+		.st1 {
+			stroke-dasharray: 2000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 0.5s linear forwards;
+			-o-animation: dash 0.5s linear forwards;
+			-moz-animation: dash 0.5s linear forwards;
+			animation: dash 0.5s linear forwards;
+		}
+
+		@-webkit-keyframes dash {
+			from {
+				stroke-dashoffset: 2000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+        @-moz-keyframes dash {
+            from {
+                stroke-dashoffset: 2000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        @-o-keyframes dash {
+            from {
+                stroke-dashoffset: 2000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 2000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+	</style>
+</defs>
+<line class="st0" x1="0" y1="0" x2="652.1" y2="652.1"/>
+<line class="st1" x1="652.1" y1="0" x2="0" y2="652.1"/>
+</svg>
