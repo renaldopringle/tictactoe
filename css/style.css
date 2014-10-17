@@ -36,6 +36,11 @@
     cursor: pointer;
 }
 
+.box div img {
+    width: 100%;
+    height: 100%;
+}
+
 .clickx img {
     height: inherit;
     width: inherit;
@@ -44,4 +49,20 @@
 .clicko img {
     height: inherit;
     width: inherit;
+}
+
+
+.clickx object {
+    height: inherit;
+    width: inherit;
+}
+
+.clicko object {
+    height: inherit;
+    width: inherit;
+}
+
+#image {
+    width: 100px;
+    height: 100px;
 }
