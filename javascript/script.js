@@ -8,8 +8,11 @@ $(document).ready(function () {
     
     /*Checks if all plays have been made and declare a draw*/
     function draw () {
-        if ((play == 9) && (!win)) {
+        function displaydraw() {
             alert("Draw!");
+        }
+        if ((play == 9) && (!win)) {
+            window.setTimeout(displaydraw,850);
             location.reload();
         }
     }
