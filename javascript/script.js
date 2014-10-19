@@ -5,6 +5,15 @@ $(document).ready(function () {
     var play = 0;
     /*If win is true, the game will stop*/
     var win;
+    /*Set the time delay for the page to reload*/
+    var reloadtime = 1000;
+    /*Set the time delay to show the outcome of the game*/
+    var displaytime = 850;
+    
+    /*Function to reload the page*/
+    function rel() {
+        location.reload();
+    }
     
     /*Checks if all plays have been made and declare a draw*/
     function draw () {
@@ -12,18 +21,15 @@ $(document).ready(function () {
             alert("Draw!");
         }
         if ((play == 9) && (!win)) {
-            window.setTimeout(displaydraw,850);
-            location.reload();
+            window.setTimeout(displaydraw,displaytime);
+            window.setTimeout(rel,reloadtime);
         }
     }
     
     /*Checks if a game is won and displays the winner before reloading to start a new game*/
     function reloadpage () {
-        function rel() {
-            location.reload();
-        }
         if (win) {
-            window.setTimeout(rel,1000);
+            window.setTimeout(rel,reloadtime);
         }
     }
     
@@ -36,9 +42,9 @@ $(document).ready(function () {
             alert("Player2 wins!");
         }
         if (player == 1) {
-            window.setTimeout(displaywinner1,850);
+            window.setTimeout(displaywinner1,displaytime);
         }else{
-            window.setTimeout(displaywinner2,850);
+            window.setTimeout(displaywinner2,displaytime);
         }
         win = true;
     }
