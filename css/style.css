@@ -1,11 +1,17 @@
+body {
+    background-color: #F1F1F1;
+}
+
 .containor {
     display: table;
     position: relative;
+    top: 50%;
     min-width: 306px;
     max-width: 306px;
     text-align: center;
     vertical-align: middle;
     margin: auto;
+    transform: translateY(50%);
     cursor: pointer;
 }
 
@@ -15,7 +21,6 @@
 
 .box {
     display: table-cell;
-    /*position: absolute;*/
     text-align: center;
     width: 100px;
     height: 100px;
@@ -27,7 +32,7 @@
     background-color: #82dcff;
 }
 
-.box div {
+.box > div {
     position: absolute;
     height: 80px;
     width: 80px;
@@ -36,28 +41,28 @@
     cursor: pointer;
 }
 
-.box div img {
+.box > div > img {
     width: 100%;
     height: 100%;
 }
 
-.clickx img {
+.clickx > img {
     height: inherit;
     width: inherit;
 }
 
-.clicko img {
+.clicko > img {
     height: inherit;
     width: inherit;
 }
 
 
-.clickx object {
+.clickx > object {
     height: inherit;
     width: inherit;
 }
 
-.clicko object {
+.clicko > object {
     height: inherit;
     width: inherit;
 }

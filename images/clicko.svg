@@ -8,7 +8,7 @@
 
 		.st0 {
 			stroke-dasharray: 2200;
-			stroke-dashoffset:0;
+			stroke-dashoffset: 0;
 			-webkit-animation: dash 0.5s linear forwards;
 			-o-animation: dash 0.5s linear forwards;
 			-moz-animation: dash 0.5s linear forwards;
